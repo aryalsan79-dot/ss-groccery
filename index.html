@@ -1,1 +1,146 @@
 <h1>hello</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshMart Grocery</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav {
+            background: #333;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #4CAF50;
+        }
+        .hero {
+            padding: 50px;
+            text-align: center;
+            background: url('https://images.unsplash.com/photo-1542838132-92c53300491e') no-repeat center/cover;
+            color: white;
+        }
+        .container {
+            padding: 20px;
+        }
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .product {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .product img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .product h3 {
+            margin: 10px 0;
+        }
+        .product button {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .product button:hover {
+            background: #45a049;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #333;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>FreshMart Grocery Store</h1>
+    <p>Your daily needs, delivered fresh!</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section class="hero">
+    <h2>Fresh & Organic Groceries</h2>
+    <p>Shop the best fruits, vegetables, and essentials</p>
+</section>
+
+<div class="container" id="products">
+    <h2>Our Products</h2>
+    <div class="products">
+        
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1567306226416-28f0efdc88ce" alt="Apples">
+            <h3>Fresh Apples</h3>
+            <p>$2.99 / kg</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1582515073490-dc6c9b2d2a0b" alt="Milk">
+            <h3>Milk</h3>
+            <p>$1.50 / liter</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec" alt="Bread">
+            <h3>Fresh Bread</h3>
+            <p>$1.20</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1615486363673-1bfae1eec9d3" alt="Vegetables">
+            <h3>Vegetables Mix</h3>
+            <p>$3.50</p>
+            <button>Add to Cart</button>
+        </div>
+
+    </div>
+</div>
+
+<div class="container" id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: support@freshmart.com</p>
+    <p>Phone: +123 456 7890</p>
+</div>
+
+<footer>
+    <p>&copy; 2026 FreshMart Grocery Store</p>
+</footer>
+
+</body>
+</html>
